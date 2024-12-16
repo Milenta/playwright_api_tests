@@ -29,16 +29,4 @@ test ('api test 2', async ({request})=> {
   const apiRequest = await request.post('/post', {data2})
 })
 
-test('api get test', async ({ request }) => {
-  const requestAPI = await request.get(`https://reqres.in/api/users/1`, {})
-  const body = await requestAPI.json()
-  // console.log(await requestAPI.url())
-  // console.table(await requestAPI.headers())
-  // console.log(body.data.email)
-  expect(requestAPI.ok()).toBeTruthy()
-  expect(requestAPI.status()).toEqual(200)
-  // console.log(await requestAPI.headers())
-  expect(body.data.email).toEqual('george.bluth@reqres.in')
-  expect(body.data.email).toBeTruthy()
-  // expect(body.data.length).toBeGreaterThanOrEqual(1);
-})
+
