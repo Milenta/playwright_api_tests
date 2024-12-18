@@ -1,7 +1,5 @@
 import { test, expect } from '@playwright/test'
 
-
-
 let employName = 'Marko'
 let DOB = '26.09.1989'
 let department = 'QA automation'
@@ -22,11 +20,9 @@ test('api post test', async ({ request }) => {
   expect(body.json).toEqual(expect.objectContaining(data))
 })
 const data2 = {
-  emp2Name : "Marko",
-  emp2DOB : "26.09.1989",
+  emp2Name: 'Marko',
+  emp2DOB: '26.09.1989',
 }
-test ('api test 2', async ({request})=> {
-  const apiRequest = await request.post('/post', {data2})
+test('api test 2', async ({ request }) => {
+  const apiRequest = await request.post('/post', { data2 })
 })
-
-
