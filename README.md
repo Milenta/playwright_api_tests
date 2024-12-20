@@ -1,4 +1,12 @@
-Package installation command:
+# Playwright API automation tests
+
+## Local development, how to setup and use:
+
+## Prerequest:
+
+- Install Node.js
+
+## Package installation command:
 
 Prettier - code formater:
 npm i prettier
